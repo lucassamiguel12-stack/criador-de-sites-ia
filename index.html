@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SiteAI — Criador de Sites</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      ✨ Site<span>AI</span>
+    </div>
+
+    <div class="status">
+      ● IA pronta
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- LADO ESQUERDO -->
+
+    <section class="painel">
+
+      <div class="painel-topo">
+
+        <p class="rotulo">CRIADOR DE SITES</p>
+
+        <h1>
+          Crie um site<br>
+          com uma descrição.
+        </h1>
+
+        <p class="descricao">
+          Conte para a IA como você quer seu site.
+          Ela vai transformar sua ideia em uma página completa.
+        </p>
+
+      </div>
+
+
+      <div class="campo">
+
+        <label for="descricao-site">
+          Descreva o site que você quer criar
+        </label>
+
+        <textarea
+          id="descricao-site"
+          placeholder="Exemplo: Quero um site para uma loja de impressão 3D chamada Nextore3D. Quero um visual moderno, verde e preto, com catálogo de produtos, preços, Instagram e WhatsApp."
+        ></textarea>
+
+      </div>
+
+
+      <button class="botao-criar" onclick="criarSite()">
+        ✨ Criar site
+      </button>
+
+
+      <div class="dicas">
+
+        <p>💡 Você pode pedir:</p>
+
+        <div class="tags">
+          <span>🎨 Cores</span>
+          <span>🛍️ Catálogo</span>
+          <span>📱 WhatsApp</span>
+          <span>📸 Instagram</span>
+          <span>📄 Páginas</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- LADO DIREITO -->
+
+    <section class="preview-area">
+
+      <div class="preview-topo">
+
+        <div>
+          <p class="rotulo">PRÉVIA</p>
+          <h2>Seu site aparecerá aqui</h2>
+        </div>
+
+        <div class="botoes-preview">
+          <button onclick="visualizarDesktop()">🖥️</button>
+          <button onclick="visualizarMobile()">📱</button>
+        </div>
+
+      </div>
+
+
+      <div class="browser">
+
+        <div class="browser-top">
+
+          <div class="bolinhas">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="endereco">
+            seu-site.ai
+          </div>
+
+        </div>
+
+
+        <div class="site-preview" id="site-preview">
+
+          <div class="preview-vazio">
+
+            <div class="icone">✨</div>
+
+            <h3>
+              Seu site vai aparecer aqui
+            </h3>
+
+            <p>
+              Escreva uma descrição do site
+              e clique em "Criar site".
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    SiteAI • Criador de sites com inteligência artificial
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
